@@ -30,5 +30,4 @@ function listar() {
     })
 }
 
-
-
+const listarPorCategoria =  (categoria) => produtos.filter(el => el.categoria.includes(categoria)); 
