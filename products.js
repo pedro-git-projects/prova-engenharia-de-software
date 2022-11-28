@@ -30,4 +30,8 @@ function listar() {
     })
 }
 
-const listarPorCategoria =  (categoria) => produtos.filter(el => el.categoria.includes(categoria)); 
+const listarPorCategoria = (categoria) => produtos.filter(el => el.categoria.includes(categoria)); 
+
+const listarPorValor = (valor) => produtos.filter(el => el.valor === valor); 
+
+console.log(listarPorValor(7.5))
