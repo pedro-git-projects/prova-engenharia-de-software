@@ -32,6 +32,6 @@ function listar() {
 
 const listarPorCategoria = (categoria) => produtos.filter(el => el.categoria.includes(categoria)); 
 
-const listarPorValor = (valor) => produtos.filter(el => el.valor === valor); 
+const listarPorValor = (min, max) => produtos.filter(el => el.valor >= min && el.valor <= max); 
 
-console.log(listarPorValor(7.5))
+
